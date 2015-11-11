@@ -52,3 +52,12 @@ for (var i = 0; i < 5; i++)
     orignal[i] = '<img src="'+orignal[i]+'" width="200" height="200"\/>';
   orignal[i+5] = orignal[i];
 } 
+function validate() 
+{
+    No = 0; 
+    if (orignal[c] != orignal[d]) 
+    {
+        coverpic(c);
+        coverpic(d);
+    } 
+}
