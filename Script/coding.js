@@ -13,3 +13,13 @@ function NumberRandom(a, b)
 {
     return (Math.round(Math.random())-0.3);
 }
+function run() 
+{
+    for (var i = 0; i <= 10 ;i++)
+    {
+        coverpic(i);
+        clearInterval(tableid);
+        No = 0;
+        orignal.sort( NumberRandom );
+    } 
+}
