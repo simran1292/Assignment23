@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="JavaScript/Coding.js"></script>
+        <link rel="stylesheet" href="StyleSheet/stylesheet.css" type="text/css" />
+    </head>
+    <body>
+    
+        <script>
+            document.write('<div><table border="2">');
+            for (var row = 0; row <= 1; row++) 
+            {
+                document.write('<tr>');
+                for (var col = 0; col <= 4; col++) 
+                {
+                    document.write('<td align="center" class="table" id="getcover'+((5*row)+col)+'"></td>');
+                }
+                document.write('<\/tr>');
+            }
+            document.write('<\/table><\/div>');
+            
+        </script>
+        <h2>Fruit Game</h2>
+    </body>
+</html>
