@@ -21,5 +21,34 @@ function run()
         clearInterval(tableid);
         No = 0;
         orignal.sort( NumberRandom );
-    } 
-}
+} 
+function displayOrignal(data) 
+{
+    if (No>1)
+    {
+        
+        clearTimeout(timerss);
+        validate();
+    }
+    document.getElementById('getcover'+data).innerHTML = orignal[data];
+    if (No==0)
+    {
+        
+        c = data;
+    }
+    else 
+    {
+       
+        d = data;  
+        timerss = setTimeout('validate()', 600);
+    }
+    No++;
+} 
+var catchimage = []; 
+for (var i = 0; i < 5; i++) 
+{
+    catchimage[i] = new Image(); 
+    catchimage[i].src = orignal[i]; 
+    orignal[i] = '<img src="'+orignal[i]+'" width="200" height="200"\/>';
+  orignal[i+5] = orignal[i];
+} 
